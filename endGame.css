@@ -1,0 +1,37 @@
+body {
+    height: 117vh;
+    height: calc(var(--vh, 1vh) * 117);
+    width: 100vw;
+    background-image: url("images/endMenu.png");
+    background-size: 100vw 109vh;
+    background-size: 100vw calc(var(--vh, 1vh) * 109);
+    background-repeat: no-repeat;
+    /* overflow: hidden; */
+}
+
+#playAgainBtn {
+    position: absolute;
+    height: 15vh;
+    height: calc(var(--vh, 1vh) * 15);
+    width: 30vw;
+    left: 5vw;
+    top: 90vh;
+    top: calc(var(--vh, 1vh) * 90);
+}
+
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+@media only screen and (max-width: 440px) {
+    body,
+    html {
+        margin: 0px;
+        padding: 0px;
+    }
+}
